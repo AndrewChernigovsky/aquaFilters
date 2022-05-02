@@ -19,7 +19,7 @@
     &__link {
       text-decoration: none;
       color: $black;
-      
+
       &:hover {
         opacity: 0.9;
         transition: 0.3s ease;
@@ -35,6 +35,50 @@
       padding: 20px 0;
     }
   }
+
+  .social {
+    display: flex;
+    align-items: center;
+
+    &__link {
+      width: min-content;
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $black;
+        border-radius: 50%;
+
+        &:hover {
+          opacity: 0.9;
+          transition: 0.3s ease;
+        }
+      }
+
+      &:hover {
+        opacity: 0.4;
+        transition: 0.3s ease;
+      }
+    }
+  }
+
+  .link-phone {
+    display: flex;
+    width: min-content;
+    height: min-content;
+
+    &__text {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 10px;
+    }
+  }
+
 }
 
 
