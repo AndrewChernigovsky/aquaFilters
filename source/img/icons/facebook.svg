@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="400" viewBox="0 0 400 400" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+</defs>
+<g transform="matrix(18.18 0 0 18.18 200 200)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 1.5; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-11.5, -12)" d="M 17 2 H 14 C 12.6739 2 11.4021 2.52678 10.4645 3.46447 C 9.52678 4.40215 9 5.67392 9 7 V 10 H 6 V 14 H 9 V 22 H 13 V 14 H 16 L 17 10 H 13 V 7 C 13 6.73478 13.1054 6.48043 13.2929 6.29289 C 13.4804 6.10536 13.7348 6 14 6 H 17 V 2 Z" stroke-linecap="round" />
+</g>
+</svg>
