@@ -7,7 +7,7 @@
   &__body {
       margin: 0;
       height: 100%;
-      font-family: "Poppins", "CormorantGaramond", "Arial", sans-serif;
+      font-family: "mplus_r", "Arial", sans-serif;
   }
 
   &__wrapper {
@@ -78,7 +78,7 @@ input[type="radio"].visually-hidden {
 }
 
 input::placeholder {
-  font-family: "Poppins";
+  font-family: "mlus_r";
   font-size: 1.4rem;
   color: $white;
   font-weight: 500;
