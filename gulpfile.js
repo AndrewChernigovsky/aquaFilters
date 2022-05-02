@@ -91,13 +91,6 @@ gulp.task("webp", function () {
 gulp.task("sprite", function () {
     return gulp
         .src("source/img/icons/*.svg")
-        .pipe(
-            cheerio({
-                run: ($) => {
-                    $("[fill]").removeAttr("fill");
-                },
-            })
-        )
         .pipe(svgstore({ inlineSvg: true }))
         .pipe(rename("sprite.svg"))
         .pipe(gulp.dest("source/img"));
