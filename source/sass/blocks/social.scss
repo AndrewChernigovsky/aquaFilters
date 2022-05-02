@@ -1,13 +1,16 @@
 .social {
+  display: flex;
+  align-items: flex-start;
+
   &__link {
     width: 45px;
     height: 45px;
 
 
     svg {
-      width: 45px;
-      height: 45px;
-      background-color: $basicblue1;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $black;
       border-radius: 50%;
 
       &:hover {
@@ -20,5 +23,14 @@
       opacity: 0.4;
       transition: 0.3s ease;
     }
+  }
+}
+
+.link-phone {
+  display: flex;
+
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

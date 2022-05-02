@@ -1,12 +1,43 @@
-.main-menu {
-  &__list {
-    display: flex;
+.main-menu.main-menu--closed,
+.main-menu.main-menu--nojs {
+  .main-menu {
+    &__list {
+      display: flex;
+    }
+  }
+
+  .main-nav {
+    min-width: inherit;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $black;
+      
+      &:hover {
+        opacity: 0.9;
+        transition: 0.3s ease;
+      }
+    }
+  }
+
+  .main-header {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
   }
 }
 
-.main-nav {
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
+
+
+
