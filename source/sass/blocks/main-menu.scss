@@ -1,0 +1,12 @@
+.main-menu {
+  &__list {
+    display: flex;
+  }
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
