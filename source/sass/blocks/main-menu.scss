@@ -7,13 +7,15 @@
   }
 
   .main-nav {
-    min-width: inherit;
+    min-width: 280px;
+    margin: 0 auto;
 
     &__list {
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-
+      padding: 0;
+      flex-wrap: wrap;
     }
 
     &__link {
@@ -33,12 +35,19 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    &__content-wrapper {
+      background-color: $aliceblue;
+      min-width: 100%;
     }
   }
 
   .social {
     display: flex;
     align-items: center;
+    margin: 0 auto;
 
     &__link {
       width: min-content;
@@ -73,15 +82,16 @@
     height: min-content;
 
     &__text {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
       margin-left: 10px;
+      margin-top: -5px;
+
+      a {
+        text-decoration: none;
+        color: $black;
+      }
     }
   }
-
 }
-
-
-
-
-
