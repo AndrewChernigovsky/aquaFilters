@@ -1,0 +1,24 @@
+.social {
+  &__link {
+    width: 45px;
+    height: 45px;
+
+
+    svg {
+      width: 45px;
+      height: 45px;
+      background-color: $basicblue1;
+      border-radius: 50%;
+
+      &:hover {
+        opacity: 0.9;
+        transition: 0.3s ease;
+      }
+    }
+
+    &:hover {
+      opacity: 0.4;
+      transition: 0.3s ease;
+    }
+  }
+}
