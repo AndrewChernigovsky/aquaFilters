@@ -1,0 +1,93 @@
+.products {
+
+  &__main-wrapper {
+    background-color: $aliceblue;
+
+  }
+
+  &__tabs {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  &__tab {
+    min-height: inherit;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+
+    a {
+      text-decoration: none;
+      color: $basicblue;
+      min-height: inherit;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s ease;
+      }
+    }
+  }
+
+  &__tab.active {
+    background-color: $basicblue1;
+    a {
+      color: $white;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s ease;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &__tab_border {
+    border-bottom: 3px solid $basicblue1;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+  }
+
+  &__item {
+    min-height: 300px;
+    background-color: $basicblue1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    position: relative;
+
+    &:hover {
+      .products__item-about {
+        height: 80%;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__item-about {
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    background-color: $basicorange;
+    transition: 0.3s ease-in-out;
+  }
+}

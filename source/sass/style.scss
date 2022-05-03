@@ -1,4 +1,5 @@
 @import "helpers/libs/normalize.scss";
+@import "helpers/libs/swiper.scss";
 @import "common/variables.scss";
 @import "common/standarts.scss";
 @import "helpers/fonts/fonts.scss";
@@ -6,4 +7,7 @@
 @import "blocks/social.scss";
 @import "sections/main-header.scss";
 @import "blocks/main-menu.scss";
+@import "common/swiper.scss";
+@import "common/tabs.scss";
 @import "sections/benifits.scss";
+@import "sections/products.scss";

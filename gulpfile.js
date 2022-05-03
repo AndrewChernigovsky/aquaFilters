@@ -14,9 +14,9 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
-var cheerio = require("gulp-cheerio");
 var del = require("del");
 const uglify = require("gulp-uglify");
+const concat = require("gulp-concat");
 
 gulp.task("css", function () {
     return gulp
@@ -61,6 +61,18 @@ gulp.task("js", function () {
         .pipe(gulp.dest("build/js"))
         .pipe(server.stream());
 });
+
+gulp.task('jsVendor', function() {
+    return gulp
+        .src("source/js/vendor/**.js")
+        .pipe(concat('vendor.js'))
+        .pipe(plumber())
+        .pipe(uglify())
+        .pipe(rename("vendor.min.js"))
+        .pipe(sourcemap.write("."))
+        .pipe(plumber.stop())
+        .pipe(gulp.dest("build/js"))
+})
 
 gulp.task("refresh", function (done) {
     server.reload();
@@ -124,5 +136,5 @@ gulp.task("clean", function () {
     return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html", "js"));
+gulp.task("build", gulp.series("clean", "copy", "css", "html", gulp.parallel("js", "jsVendor")));
 gulp.task("start", gulp.series("build", "server"));
