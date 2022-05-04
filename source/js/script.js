@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         pagination: {
           el: '.swiper-main__pagination',
           clickable: true,
-          dynamicBullets: true,
+          dynamicBullets: false,
         },
         navigation: {
           nextEl: '.swiper-main__button-next',
@@ -35,27 +35,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         slidesPerView: 1,
         slidesPerGroup: 1,
         autoplay: {
-          delay: 400000,
-        },
-        breakpoints: {
-    
-          320: {
-            pagination: {
-              type: 'fraction',
-              renderFraction: function (currentClass, totalClass) {
-                return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-              },
-            },
-          },
-    
-          768: {
-            pagination: {
-              type: 'bullets',
-              renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-              },
-            },
-          },
+          delay: 40000,
         },
     });
 });
