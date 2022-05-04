@@ -74,11 +74,35 @@
     word-break: break-all;
     overflow: hidden;
     max-height: 250px;
+
+    color: $white;
   }
 
   .swiper-pagination-bullet {
     background-color: $basicorange;
     width: 20px;
     height: 20px;
+  }
+
+  &__benefits {
+    position: absolute;
+    z-index: 2;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+  }
+
+  &__benefits-item {
+    min-height: 50px;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: $white;
+    min-width: max-content;
   }
 }
