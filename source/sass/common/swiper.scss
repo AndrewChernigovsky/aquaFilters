@@ -33,16 +33,20 @@
     min-width: 300px;
     min-height: 250px;
     padding: 20px;
-    margin-top: 0;
     position: absolute;
+    margin-top: 20px;
+    right: 80px;
 
     &::after {
       content: "";
       display: block;
-      background-image: linear-gradient(to left, $basicblue, $basicblue1);
+      background-image: linear-gradient(to left, $basicgreen3, $basicgreen3);
+      -webkit-box-shadow: -6px 11px 51px 39px $basicgreen3;
+      -moz-box-shadow: -6px 11px 51px 39px $basicgreen3;
+      box-shadow: -6px 11px 51px 39px $basicgreen3;
       min-width: 300px;
       min-height: 500px;
-      opacity: 0.5;
+      opacity: 0.4;
       position: absolute;
       z-index: 2;
       min-height: 250px;
