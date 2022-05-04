@@ -30,7 +30,7 @@
   }
 
   &__inner {
-    min-width: 300px;
+    min-width: 460px;
     min-height: 250px;
     padding: 20px;
     position: absolute;
@@ -44,7 +44,7 @@
       -webkit-box-shadow: -6px 11px 51px 39px $basicgreen3;
       -moz-box-shadow: -6px 11px 51px 39px $basicgreen3;
       box-shadow: -6px 11px 51px 39px $basicgreen3;
-      min-width: 300px;
+      min-width: 460px;
       min-height: 500px;
       opacity: 0.4;
       position: absolute;
@@ -67,27 +67,28 @@
   &__text {
     position: absolute;
     margin: 0 auto;
-    margin-top: 40px;
     z-index: 6;
-    text-align: center;
-    max-width: 300px;
-    word-break: break-all;
-    overflow: hidden;
-    max-height: 250px;
-
+    text-align: right;
+    min-width: 300px;
+    word-break: break-word;
+    max-height: 330px;
     color: $white;
+
+    .f-b3 {
+      text-shadow: 1px 1px 1px $black;
+    }
   }
 
   .swiper-pagination-bullet {
-    background-color: $basicorange;
-    width: 20px;
-    height: 20px;
+    background-color: $white;
+    width: 15px;
+    height: 15px;
   }
 
   &__benefits {
     position: absolute;
     z-index: 2;
-    top: 66%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
